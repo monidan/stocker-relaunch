@@ -1,0 +1,28 @@
+{
+  "name": "stocker-relaunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:build": "npx prisma migrate dev --name init",
+    "prisma:build": "npx prisma generate",
+    "dev": "nodemon index.ts"
+  },
+  "prisma": {
+    "schema": "database/prisma/schema.prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "fastify": "^4.21.0",
+    "nodemon": "^3.0.1",
+    "prisma": "^5.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@prisma/client": "5.1.0"
+  }
+}
